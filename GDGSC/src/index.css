@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* body{ */
+  /* font-family: "Alumni sans collegiate one"; */
+  /* background-color: #130444; */
+/* } */
+
+.home-container {
+  background: linear-gradient(to right, #3b82f6, #361257);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.home-desc {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.home-btn {
+  background-color: #fff;
+  color: #3b82f6;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.home-btn:hover {
+  background-color: #f0f0f0;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-scroll {
+  animation: scroll 5s linear infinite;
+}
+
+.lightning-text {
+  color: #a855f7;  /* Purple */
+  text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 40px #00f,
+               0 0 80px #00f, 0 0 120px #00f;
+  animation: lightning 2s infinite;
+}
+
+@keyframes lightning {
+  0%,
+  100% {
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00,
+      0 0 80px #00ff00, 0 0 120px #00ff00;
+  }
+  50% {
+    text-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00,
+      0 0 120px #00ff00, 0 0 200px #00ff00;
+  }
+}
