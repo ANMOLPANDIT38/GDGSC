@@ -9,7 +9,7 @@ const Navbar = () => {
         
       <div className="relative flex items-center">
   <img 
-    src="src\assets\logo.jpg" 
+    src="src\assets\logo1.jpg" 
     alt="Logo" 
     className="h-12 mr-3 animate-pulse drop-shadow-[0_0_15px_rgba(0,255,255,0.6)]"
   /> <>br</>

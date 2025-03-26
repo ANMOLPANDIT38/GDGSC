@@ -6,6 +6,7 @@ import Home from './components/Home'
 import AboutSection from './components/AboutSection';
 import Gallery from './components/Gallery';
 import Events from './components/Events';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Events/>
         <TeamSection/>
         <Gallery/>
+        <Footer/>
       </div>  
     </>
   )
