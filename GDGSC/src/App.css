@@ -43,3 +43,50 @@
 .read-the-docs {
   color: #888;
 }
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+  background-size: 200% auto;
+  animation: gradient 3s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+  padding-left: 100%;
+}
+
+.fancy-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: inline-block;
+}
+
+.fancy-heading::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  bottom: -10px;
+  left: 25%;
+  background: linear-gradient(to right, transparent, gold, transparent);
+}
+
+@keyframes float-away {
+  to { 
+    transform: translateY(-30px) rotate(360deg);
+    opacity: 0; 
+  }
+}
+
