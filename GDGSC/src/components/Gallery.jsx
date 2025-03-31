@@ -60,7 +60,7 @@ const Gallery = () => {
         setActiveEvent((prev) => (prev + 1) % timelineEvents.length);
         setIsAnimating(true);
       }
-    }, 3000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [isAnimating, hoveredDot]);
 
